@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Use quotes for font names with spaces */
+    color: #333; /* Use a darker color for better readability */
+}
+
+section {
+    background-image: url('weather1.jpg'); /* Provide a fallback for accessibility */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for better visibility */
+    width: 80%; /* Use percentage for better responsiveness */
+    max-width: 700px; /* Set a maximum width for larger screens */
+    border-radius: 10px; /* Increase border-radius for a smoother look */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+h1 {
+    font-size: 3rem; /* Use relative units for better scalability */
+    color: #333;
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+input {
+    margin: 15px 0; /* Adjust vertical margin for better spacing */
+    font-family: inherit;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc; /* Add a border for better visibility */
+}
+
+input[type="submit"] { /* Use lowercase for consistency */
+    padding: 12px;
+    width: 150px; /* Increase width for a more prominent button */
+    font-size: 16px;
+    background-color: #4970f6; /* Use a complementary color for the background */
+    color: #fff; /* Use a lighter color for better contrast */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Add smooth transitions */
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #3456b3; /* Darken the background color on hover/focus */
+    outline: none; /* Remove default focus outline */
+}
+
+input[type="submit"]:active {
+    transform: translateY(2px);
+}
+
+p {
+    font-weight: 600;
+}
+
+.error {
+    color: #ff5555; /* Use a more pleasant red color */
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive and don't overflow */
+}
